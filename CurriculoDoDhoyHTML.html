@@ -19,22 +19,21 @@
             <span>                
                 Dhoy Rodrigues Alves    
             </span> 
-        </h1>
-       
+        </h1>       
 
         <nav> <!- se eu colocar uma tag fora da tag nav entao os mecanismos de busca não me colocam na busca daquele site, pra isso o conteudo tem qye estar fora do nav pra mim ser achado na net->
 
             <h3>
                 <span><!- usado que nem o div mas não tem quebra de linha, posso usar que nem o div->
-                    Início
+                    <a href="CurriculoDoDhoyHTML.html" target="_self">Início</a> 
                 </span>
                 -
                 <span>
-                    Sobre mim
+                    <a href="SobreMim.html"target="_self">Sobre mim</a>
                 </span>
                 -
                 <span>
-                    Contato
+                    <a href="Contato.html"target="_self">Contato</a> 
                 </span>             
 
             </h3>
@@ -45,7 +44,7 @@
 
     <section> <!- section sao secções de separação de conteudo, para organização->
         
-        <h2>Dados Pessoais: </h2>
+        <h2>Dados Pessoais:
             <h3>
                 <article> <!- articles são especificos e seccitions são genericos ->
                     Documentos
@@ -56,8 +55,7 @@
                 </article>
                 ...
             </h3>
-        
-        
+        </h2>       
        
         
     </section>
@@ -137,8 +135,7 @@
                     julho de 2015 à jan de 2016 
                 </footer> 
 
-            </h4>
-            
+            </h4>            
 
             <nav>
                 <h5>Links Complementares da Empresa </h5>
@@ -182,3 +179,8 @@ importante: o uso dos h1... explica semanticamente a divisão das coisas e são 
 <!- validator w3c para verificar se o HTML esta escrito corretamente->
 
 <!- p de paragrafo e br usada para separar textos ou quebrar automaticamente->
+
+<!- a href= "pagina:html" ou pode ser um http:// ou um protocolo = url ou o diretorio usando o /
+o uso de target = "..." pode ser _self (abre na mesma pag) _blank (abre uma nova aba mas quebra o botão voltar) eo 
+_parent (uma janela dentro da pagina usando werflame, para anuncios)
+usado para novas abas ou paginas->
