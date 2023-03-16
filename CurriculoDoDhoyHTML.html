@@ -16,7 +16,7 @@
     <header> <!-cabeçalho da estrutura body->
         <h1> <!- uso uma vez->
             Curriculo 
-            <span>                
+            <span>  <!- usado que nem o div mas não tem quebra de linha, posso usar que nem o div->              
                 Dhoy Rodrigues Alves    
             </span> 
         </h1>       
@@ -24,18 +24,44 @@
         <nav> <!- se eu colocar uma tag fora da tag nav entao os mecanismos de busca não me colocam na busca daquele site, pra isso o conteudo tem qye estar fora do nav pra mim ser achado na net->
 
             <h3>
-                <span><!- usado que nem o div mas não tem quebra de linha, posso usar que nem o div->
+            <ol> <!- lista organizada por ordem(ordem importa)->
+                <li> <!- coloca a ordem->
                     <a href="CurriculoDoDhoyHTML.html" target="_self">Início</a> 
-                </span>
-                -
-                <span>
+                </li>
+                
+                <li>
                     <a href="SobreMim.html"target="_self">Sobre mim</a>
-                </span>
-                -
-                <span>
+                </li>
+                
+                <li>
                     <a href="Contato.html"target="_self">Contato</a> 
-                </span>             
-
+                    <h4>
+                        <ul>
+                            <li>
+                                <a href="https://facebook.com">facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com">LinkedIN</a>
+                            </li>
+                            <li>
+                                <a href="Contato.html">telefone</a>
+                                <ul>
+                                    <li>
+                                        fixo
+                                    </li>
+                                    <li>
+                                        cell
+                                    </li>
+                                    <li>
+                                        empresarial
+                                    </li>
+                                </ul>
+                            </li>    
+                        </ul>
+                    </h4>
+                    
+                </li>           
+            </ol>
             </h3>
             
         </nav>
@@ -49,11 +75,31 @@
                 <article> <!- articles são especificos e seccitions são genericos ->
                     Documentos
                 </article>
-                ...
+                <h4>
+                    <ul><!- lista onde a ordem não importa->
+                        <li>
+                            Identidade XXXXXXXXXXX
+                        </li>
+                        <li>
+                            CPF xXXXXXXXXXXX
+                        </li>
+                        <li>
+                            CNH XXXXXXXXXXXXX
+                        </li>                 
+                        
+                    </ul>
+
+                </h4>
+                
+
                 <article> <!- assim como as section os articles são para separação de conteudo, que faz sentido para o que ta sendo escrito ex.: produto article para um site de loja->
-                    Dados de Contato
-                </article>
-                ...
+                    <h3>Dados de Contato</h3>
+                    <h4>
+                        <a href="mailto:dhoyralves@gmail.com">dhoy@gmail.com</a><br>
+                        <a href="tel:+5588999268197">+55 (88) 9 9926 8197</a>
+                    </h4>
+                </article>                
+                
             </h3>
         </h2>       
        
@@ -123,19 +169,24 @@
 
         <article>
             <h2>Estagios</h2>
+            <ol> <!- a ordem importa ->
+                <li>
+                    <article>
+                        <h4>
+                            <header>
+                                ANINGER calçados
+                            </header>
+                            <Section>
+                                Eletrotecnica
+                            </Section>
+                            <footer>
+                                julho de 2015 à jan de 2016 
+                            </footer>             
+                        </h4> 
+                    </article>
+                </li>
 
-            <h4>
-                <header>
-                    ANINGER calçados
-                </header>
-                <Section>
-                    Eletrotecnica
-                </Section>
-                <footer>
-                    julho de 2015 à jan de 2016 
-                </footer> 
-
-            </h4>            
+            </ol>                      
 
             <nav>
                 <h5>Links Complementares da Empresa </h5>
@@ -184,3 +235,9 @@ importante: o uso dos h1... explica semanticamente a divisão das coisas e são 
 o uso de target = "..." pode ser _self (abre na mesma pag) _blank (abre uma nova aba mas quebra o botão voltar) eo 
 _parent (uma janela dentro da pagina usando werflame, para anuncios)
 usado para novas abas ou paginas->
+
+<!- a href= "mailto:dhoy@gmail.com" dhoy@gmail.com a para chamar o email
+a href="tel:+55858998598" (88)55465784624 a para chmar o telefone ->
+
+<!- para listas se usa o ol primeiro e dpois o li, dependendo da ordem->
+<!- para lista onde a ordem não importa se usa ul e depois o li ->
