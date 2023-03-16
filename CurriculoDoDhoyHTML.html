@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-    <!- HTML é a estrutura e o CSS é a pintura->
+    <!- HTML é a estrutura, CSS é a pintura->
 
 <html lang="pt-br">
 
@@ -14,69 +14,95 @@
 <body> <!-corpo->
 
     <header> <!-cabeçalho da estrutura body->
-        Curriculo do Dhoy Rodrigues Alves <br>
+        <h1> <!- uso uma vez->
+            Curriculo 
+            <span>                
+                Dhoy Rodrigues Alves    
+            </span> 
+        </h1>
+       
 
         <nav> <!- se eu colocar uma tag fora da tag nav entao os mecanismos de busca não me colocam na busca daquele site, pra isso o conteudo tem qye estar fora do nav pra mim ser achado na net->
 
-            Início
-            Sobre mim
-            Contato <br><br>
+            <h3>
+                <span><!- usado que nem o div mas não tem quebra de linha, posso usar que nem o div->
+                    Início
+                </span>
+                <span>
+                    Sobre mim
+                </span>
+                <span>
+                    Contato <br><br>
+                </span>             
+
+            </h3>
+            
         </nav>
 
     </header>
 
     <section> <!- section sao secções de separação de conteudo, para organização->
-        Dados Pessoais: <br>
-        <article> <!- articles são especificos e seccitions são genericos ->
-            Documentos
-        </article>
+        
+        <h2>Dados Pessoais: </h2>
+            <h3>
+                <article> <!- articles são especificos e seccitions são genericos ->
+                    Documentos
+                </article>
+        
+                <article> <!- assim como as section os articles são para separação de conteudo, que faz sentido para o que ta sendo escrito ex.: produto article para um site de loja->
+                    Dados de Contato <br>
+                </article>
 
-        <article> <!- assim como as section os articles são para separação de conteudo, que faz sentido para o que ta sendo escrito ex.: produto article para um site de loja->
-            Dados de Contato <br>
-        </article>
+            </h3>
+        
+        
+       
+        
     </section>
 
     <main> <!- tag main é unica dessa pagina e existe uma tag para cada pagina ->
+        <h4>
+            <header>
+                <h2> Cursos Realizados </h2> 
+            </header>
+            <article>
+                <h3>Ensino Fundamental</h3>
+                 EEF Francisco Ferreira de Pinho <br>
+            </article>
+            <article>
+                <h3>Ensino Médio:</h3>
+                 EEEP Antonio Rodrigues de Oliveira <br>
+            </article>
+            <article>
+                <h3>Cursos técnicos</h3>
+                 Técnico em Eletrotécnica <br>
+            </article>
+            <article>
+                <h3>Cursos Superiores</h3>
+                 Engenharia de Produção Civil <br> <br>
+            </article>
+
+        </h4>
         
-        <header>
-            Cursos Realizados <br> <br>
-
-        </header>
-        <article>
-            Ensino Fundamental
-             EEF Francisco Ferreira de Pinho <br>
-        </article>
-        <article>
-
-            Ensino Médio:
-             EEEP Antonio Rodrigues de Oliveira <br>
-        </article>
-        <article>
-
-            Cursos técnicos
-             Técnico em Eletrotécnica <br>
-        </article>
-        <article>
-
-            Cursos Superiores
-             Engenharia de Produção Civil <br> <br>
-        </article>
         <section>
-            Cursos de Formação/Aprofudamentos
+            <h2>Cursos de Formação/Aprofudamentos</h2>  
+            <h4>
+                <article>
+                    HTML <br> 
+                    CSS <br>
+                    JAVAScript <br>
+                </article>
+                <article>
+                    Java <br> <br>
+                </article>
+
+            </h4>         
             
-            <article>
-                HTML <br> 
-                CSS <br>
-                JAVAScript <br>
-            </article>
-            <article>
-                Java <br> <br>
-            </article>
         </section>
         
         <footer>
 
-            Para mais informações sobre mim é só me acompanhar <br> <br>
+            <h3>Para mais informações sobre mim é só me acompanhar <br> <br></h3>
         
         </footer>
     </main>
@@ -84,20 +110,24 @@
     <aside> <!- Para adcionar Informações complementares no texto, usado para colocar propagandas em sites->
 
         <article>
-            Estagios
+            <h2>Estagios</h2>
 
-            <header>
-                ANINGER calçados
-            </header>
-            <Section>
-                Eletrotecnica
-            </Section>
-            <footer>
-                julho de 2015 à jan de 2016 
-            </footer>
+            <h4>
+                <header>
+                    ANINGER calçados
+                </header>
+                <Section>
+                    Eletrotecnica
+                </Section>
+                <footer>
+                    julho de 2015 à jan de 2016 
+                </footer> 
+
+            </h4>
+            
 
             <nav>
-                Links Complementares da Empresa <br><br>
+                <h5>Links Complementares da Empresa <br><br></h5>
             </nav>
         </article>
 
@@ -105,13 +135,15 @@
     </aside>
 
     <footer> <!- Rodapé do meu texto->
-
-        <nav>
-            LinkedIN
-            Instaa
-            Face
-            Git <br><br><br>
-        </nav>
+        <h5>
+            <nav>
+                LinkedIN
+                Instaa
+                Face
+                Git <br><br><br>
+            </nav>
+        </h5>
+        
         &copy; 2021 - Todos Direitos Reservados <!-&copy; é uma entities HTML UTF-8
 
     </footer>
@@ -120,4 +152,12 @@
 
 
 <!- div não são semanticas e usadas o minimo possivel, no HTML 5. mas no HTML 5
-é usada como section, articles, footer, header...->
+é usada como section, articles, footer, header... ou seja,
+div é um bloco de conteudo->
+
+<!- div e span ~so estruturas de texto genericas, as demais são semanticas->
+
+<!- titulo e sub-titulos
+h1, ..., h6     paragrafo: p  ;    quebra de linha: br ->
+
+<!- uso os h1... div, article e sections ->
