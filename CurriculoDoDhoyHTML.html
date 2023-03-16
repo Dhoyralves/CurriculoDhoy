@@ -14,7 +14,14 @@
 <body> <!-corpo->
 
     <header> <!-cabeçalho da estrutura body->
-        Curriculo do Dhoy Rodrigues Alves <br><br><br>
+        Curriculo do Dhoy Rodrigues Alves <br>
+
+        <nav> <!- se eu colocar uma tag fora da tag nav entao os mecanismos de busca não me colocam na busca daquele site, pra isso o conteudo tem qye estar fora do nav pra mim ser achado na net->
+
+            Início
+            Sobre mim
+            Contato <br><br>
+        </nav>
 
     </header>
 
@@ -74,10 +81,43 @@
         </footer>
     </main>
 
+    <aside> <!- Para adcionar Informações complementares no texto, usado para colocar propagandas em sites->
+
+        <article>
+            Estagios
+
+            <header>
+                ANINGER calçados
+            </header>
+            <Section>
+                Eletrotecnica
+            </Section>
+            <footer>
+                julho de 2015 à jan de 2016 
+            </footer>
+
+            <nav>
+                Links Complementares da Empresa <br><br>
+            </nav>
+        </article>
+
+
+    </aside>
+
     <footer> <!- Rodapé do meu texto->
 
+        <nav>
+            LinkedIN
+            Instaa
+            Face
+            Git <br><br><br>
+        </nav>
         &copy; 2021 - Todos Direitos Reservados <!-&copy; é uma entities HTML UTF-8
 
     </footer>
 </body>
 </html>
+
+
+<!- div não são semanticas e usadas o minimo possivel, no HTML 5. mas no HTML 5
+é usada como section, articles, footer, header...->
