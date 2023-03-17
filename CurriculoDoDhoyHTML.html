@@ -21,8 +21,16 @@
             </span> 
         </h1>       
 
-        <img src="182809efb1ac34d2c6807618a6498ecc.jpg" width="100" height="100" alt="quadrado azul com nuvens"/> <!- pode ser um https://via.placeholder.com/200 ou o base64 para converter imagem em texto quedá certo, isso vem do html2; para saber os formatos olhar no MDN web Docs na net(WebP)->
+        <figure> <!- pode ser qualquer imagem ou conteudo pra destacar no texto->
+            <img src="182809efb1ac34d2c6807618a6498ecc.jpg" width="100" height="100" alt="quadrado azul com nuvens"/> <!- pode ser um https://via.placeholder.com/200 ou o base64 para converter imagem em texto quedá certo, isso vem do html2; para saber os formatos olhar no MDN web Docs na net(WebP)->
 
+            <figcaption>Nuvem</figcaption> <!- comentario baixo da imagem->
+        </figure>
+        
+        <picture> <!-tag que serve só pra imagens e o source é a prmeira que carrega, caso não de certo carrega a proxima que é a imagem->
+            <source srcset="https://via.placeholder.com/200" type="image/jpg" />
+            <img src="182809efb1ac34d2c6807618a6498ecc.jpg" width="100" height="100" alt="quadrado azul com nuvens"/> 
+        </picture>
 
 
         <nav> <!- se eu colocar uma tag fora da tag nav entao os mecanismos de busca não me colocam na busca daquele site, pra isso o conteudo tem qye estar fora do nav pra mim ser achado na net->
