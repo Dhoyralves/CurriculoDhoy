@@ -203,37 +203,81 @@
                 <h4>Horário de estudos</h4>
             </caption>
 
+            <thead> <!- Cabeçalho da tabela->
+                <tr>
+                    <th>
+                        DIAS DA SEMANA
+                    </th>
+                    <th>
+                        SEG
+                    </th>
+                    <th>
+                        TER
+                    </th>
+                    <th>
+                        QUA
+                    </th>
+                    <th>
+                        QUI
+                    </th>
+                    <th>
+                        SEX
+                    </th>
+                    <th>
+                        SAB
+                    </th>
+                    <th>
+                        DOM
+                    </th>
+                </tr>
+            </thead>
+
             <tbody> <!- corpo da tabela->
                 <tr> <!- linha 1->
                     <td>MANHA</td>
-                    <td rowspan="2">EST</td>
+                    <td rowspan="2">EST</td> <!- mesclar colunas->
                     <td>EPC</td>
                     <td>ESC</td>
                     <td>EST</td>
                     <td>EPC</td>
+                    <td rowspan="2" colspan="2">Revisão</td>
                 </tr>
                 <tr><!- linha 2->
                     <td>TARDE</td>                    
                     <td>EPC</td>
                     <td>EPC</td>
-                    <td colspan="2">EST</td>
+                    <td colspan="2">EST</td> <!- mesclar linhas->
                 </tr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             </tbody>
 
+            <tfoot> <!- rodapé da tabela->
+                <tr>
+                    <th>
+                        Foco
+                    </th>
+                    <th>
+                        Estuda
+                    </th>
+                    <th>
+                        Estuda
+                    </th>
+                    <th>
+                        Estuda
+                    </th>
+                    <th>
+                        Estuda
+                    </th>
+                    <th>
+                        Estuda
+                    </th>
+                    <th>
+                        Estuda
+                    </th>
+                    <th>
+                        Estuda
+                    </th>
+                </tr>
+            </tfoot>
         </table>
     </aside>
 
