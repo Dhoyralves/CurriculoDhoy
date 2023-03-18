@@ -77,9 +77,29 @@
             <input type="radio" name="h" value="noite" /> noite <br />
         </form>
 
-        <textarea name="dhoy" id="1" cols="30" rows="10"> texto padrao</textarea>
+        <textarea name="dhoy" id="1" cols="30" rows="10"> texto padrao</textarea> <br/>
+        
+
+        <select name="cidade" id="1">
+            <option value="">selecione a cidade</option>
+            <option value="Blumenau">blumenau</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+        </select>
+        <br>
+
+        cidade: <input list="cidad" name="cidad"/>
+        <datalist id="cidad">
+            <option value="Blumenau">blumenau</option>
+            <option value="SC">SC</option>
+            <option value="SP">SP</option>
+        </datalist><br>
 
 
+        <button type="button">outra ação</button> <!- coloque type button para ele n enviar automaticamente->
+        <button type="reset">Limpar</button>
+        <button type="submit">enviar</button>
+        <input type="submit">
     </main>
 
     <footer>
