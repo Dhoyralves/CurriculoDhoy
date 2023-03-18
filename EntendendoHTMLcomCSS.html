@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS1</title>
+
+    <link rel="stylesheet" href="style.css" />
+    
 </head>
+
 <body>
     <header>
         <h1>Aula de CSS</h1>
@@ -16,7 +20,32 @@
             <p>
                 Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Detraxit consequat et quo num tendi nada.Quem num gosta di mé, boa gentis num é.Diuretics paradis num copo é motivis de denguis.
             </p>
+            <h2>Segunda aula</h2>
+            <p>
+                Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Detraxit consequat et quo num tendi nada.Quem num gosta di mé, boa gentis num é.Diuretics paradis num copo é motivis de denguis.
+            </p>
+            <h2 style="color: red;text-decoration: none;">
+                Terceira aula
+            </h2> <!- estou aplicando aqui a 3° regra do uso de css ->
+            <p>
+                Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Detraxit consequat et quo num tendi nada.Quem num gosta di mé, boa gentis num é.Diuretics paradis num copo é motivis de denguis.
+            </p>
         </article>
     </main>
 </body>
 </html>
+
+
+<!- Importante:: seletor h2,{}é o bloco de instruções e dentro do bloco as regras, que é composta pela propriedade dois pontos e o valor da propriedade, ao final de cada regra temos o ponto e virgula ->
+
+<!-text-decoration: underline;   =   sublinhado   ->
+
+<!- mas não é a melhor forma de colocar um css no head da pagina, pq ele ler tudo e volta novamente, ler tudo e volta novamente aplicando as regras, deixando a aplicação lenta->
+
+<!- 1° forma de usar um css no site->
+<!- tag style indicada para ser aplicada na parte de cima do site, antes da rolagem pra o restante da pagina->
+
+<!- 2° forma de usar um css no site, mais indicado para pagina grandes->
+<!- o ideal é eu fazer uma folha de style.css para a pagina do site, pq ela é carregada uma vez e fica em cache; não posso esquecer de referenciar no head o link da folha para aplicação no html->
+
+<!- 3° forma de usar um css no site, definido em line na propria tag do html e é o mais indicado em termos de performance, porem é ruim para manutenção, e utilizado para uma regra beeem especifica ->
