@@ -1,0 +1,18 @@
+.azul{
+    background-color: blue;
+}
+.vermelho{
+    background-color: red;
+}
+.verde{
+    background-color: rgb(4, 226, 4);
+}
+
+.box{
+    box-sizing: border-box;
+    width: 5rem;
+    height: 5rem;
+    color: white;
+    font-size: 3rem;
+    padding: 5px;
+}
