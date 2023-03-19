@@ -1,4 +1,7 @@
- h2 { 
+main h1 {
+    color: blueviolet;
+}
+h2 { 
     color: rgba(0, 255, 0, 0.795);
     text-decoration: underline;
  }
@@ -16,4 +19,14 @@
 }
 #titulo-segunda-aula{
     text-decoration:line-through;
+}
+
+.texto-vermelho.comentario{
+    color: rgb(6, 33, 185);
+}
+.comentario{
+    color: red;
+}
+.texto-vermelho .comentario{
+    color: black;
 }

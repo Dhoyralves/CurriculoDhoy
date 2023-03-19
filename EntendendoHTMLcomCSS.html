@@ -15,6 +15,8 @@
         <h1>Aula de CSS</h1>
     </header>
     <main>
+        <h1>Lista de paragrafos</h1>
+
         <article>
 
             <h2 class="titulo-aula texto-azul" id="titulo-primeira-aula">
@@ -22,7 +24,7 @@
             </h2>
             <!- temos aqui um h2 identificado com duas classes->
             <p>
-                Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Detraxit consequat et quo num tendi nada.Quem num gosta di mé, boa gentis num é.Diuretics paradis num copo é motivis de denguis.
+                Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis. <span class="comentario">Este é um comentario.</span> Detraxit consequat et quo num tendi nada.Quem num gosta di mé, boa gentis num é.Diuretics paradis num copo é motivis de denguis.<span class="comentario texto-vermelho">Este é um comentario.</span>
             </p>
 
 
@@ -30,7 +32,7 @@
                 Segunda aula
             </h2>
             <p class="texto-vermelho">
-                Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Detraxit consequat et quo num tendi nada.Quem num gosta di mé, boa gentis num é.Diuretics paradis num copo é motivis de denguis.
+                Mussum Ipsum, cacilds vidis litro abertis. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.Detraxit consequat et quo num tendi nada.Quem num gosta di mé. <span class="comentario">Este é um comentario.</span> boa gentis num é.Diuretics paradis num copo é motivis de denguis.
             </p>
 
 
@@ -101,3 +103,7 @@
 <!- id é o identificador unico e, só posso ter um unico id para cada pagina; mas não posso ter o mesmo id mais de uma vez na mesma tela e apenas um id para cada elemento (confuso isso)->
 
 <!- Importante: classe são usadas para agrupar elementos;ids são usados para identificar os elementos e serem usados no css e no javascript. Utilizando esses identificadores como seletores para o css e o java->
+
+<!- no css= cascata de cores a regra de aplicação vem das tag, depois vem aplicada para as classes, depois aplicada a regra do id, entao qnauto mais especifico forem as regras que vc aplicar, mais proridade vai ter aquela regra->
+
+<!- primeiro é aplicado a regra do arquivo css, depois a regra do  tag style e depois a regra do in line->
