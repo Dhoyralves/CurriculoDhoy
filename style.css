@@ -47,4 +47,7 @@ main h3{
 }
 #para-fundo{
     background-image: url("./foca.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
