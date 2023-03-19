@@ -44,6 +44,7 @@ main h3{
 
 .quinta{
     background-color: rgb(194, 181, 9);
+
 }
 #para-fundo{
     background-image: url("./foca.jpg");
@@ -73,4 +74,23 @@ p{
     text-decoration: underline;
     letter-spacing: 1rem;
     text-transform: capitalize;
+}
+a:active{
+    color: red;
+    cursor: pointer;
+}
+a:visited{
+    color: rgb(116, 241, 58);
+    cursor: pointer;
+}
+a:hover{
+    color: rgb(247, 54, 205);
+    cursor: pointer;
+}
+.sexta:hover{
+    cursor: pointer;
+    color: blue;
+}
+.quinta:hover{
+    display: none;
 }
